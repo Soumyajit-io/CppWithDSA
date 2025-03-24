@@ -1,23 +1,23 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main (){
-    int n , x;
-    cout<<"Enter size of array :";
-    cin>>n;
-    int arr[n];
-    for(int i =0; i<=n-1;i++){//input
-        cout<<"Enter "<<i+1<<" element";
-        cin>>arr[i];
+    vector<int> v;
+    int x,b=0;
+
+    for(int i =0;i<=5;i++){//input
+        int f;//extra variable
+        cin>>f;
+        v.push_back(f);
     }
-    cout<<"Enter the Element you want to search";
+    cout<<"Enter the Element you want to find last occurrence ";
     cin>>x;
-    bool flag = false;
-    for(int i =0; i<=n-1;i++){//search
-        if(arr[i]==x) flag = true;
-    
-     
+    for(int i=0;i<=5;i++){//this is a forward loop ,but for better you can try backward loop. 
+        if(v[i]==x){
+            b=i;
+        }
     }
-    if (flag==true) cout<<"Present sir!!";
-    else cout<<"Absent sir!!";
+    cout<<b;
+    
 }
