@@ -1,4 +1,4 @@
-//Write a program to copy the contents of one array into another in the reverse order without extra array
+//Write a program to reverse some part of one array into another Array
 
 #include<iostream>
 #include<vector>
@@ -11,7 +11,13 @@ void display(vector<int>& v){//this is a new vector has a different memory locat
         cout<<v[i]<<" ";
     }
 }
-
+void reversepart(int start,int end,vector<int>& v){
+    for(int i=start,j=end;i<=j;i++,j--){
+        int temp = v[i];
+        v[i]=v[j];
+        v[j]=temp;
+    }
+}
 int main (){
     vector<int> v;
     
@@ -25,6 +31,7 @@ int main (){
         v.push_back(f);
     }
     display(v);
+    cout<<endl;
     //1. using while loop...
     // int i=0;
     // int j = v.size()-1;
@@ -46,7 +53,7 @@ int main (){
     //     v[j]=temp;
     // }
     //3. using buildin function
-    reverse(v.begin(), v.end());
-
+    // reverse(v.begin(), v.end());
+    reversepart(0,2,v);
     display(v);
 }
