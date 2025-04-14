@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
     string str;
-    cin>>str;//works only if the given string has no space
+    getline(cin,str);//it will print with space
     cout<<str<<endl;
     
 
