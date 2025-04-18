@@ -43,5 +43,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "terminal.integrated.mouseWheelZoom": true
+    "terminal.integrated.mouseWheelZoom": true,
+    "C_Cpp.errorSquiggles": "disabled"
 }
