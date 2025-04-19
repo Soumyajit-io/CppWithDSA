@@ -24,11 +24,15 @@ int main(){
             }
         }
     }
-    for(int i=0;i<=m-1;i++){
-        for(int j=0;j<=m-1;j++){
-            if(j==) {
-                
-            }
+    for(int k=0;k<=m-1;k++){
+        int i = 0;
+        int j = m-1;
+        while(j>i){
+            int temp = arr[k][i];
+            arr[k][i]=arr[k][j];
+            arr[k][j]=temp;
+            i++;
+            j--;
         }
     }
 
