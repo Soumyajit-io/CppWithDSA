@@ -15,6 +15,7 @@ int main(){
             cin>>arr[i][j];
         }
     }
+    //transpose
     for(int i=0;i<=m-1;i++){
         for(int j=0;j<=m-1;j++){
             if(j>i) {
@@ -24,6 +25,7 @@ int main(){
             }
         }
     }
+    //reverse
     for(int k=0;k<=m-1;k++){
         int i = 0;
         int j = m-1;
@@ -35,7 +37,7 @@ int main(){
             j--;
         }
     }
-
+//printing
     for(int i=0;i<=m-1;i++){
         for(int j=0;j<=m-1;j++){
             cout<<arr[i][j]<<" ";
