@@ -20,22 +20,23 @@ int main(){
     int minc=0;
     int maxr =m-1;
     int maxc=n-1;
-    while(minr<=maxr && minc<=maxc){
-    for(j=minc;j<=maxc;j++){//right
+    while(minr<=maxr && minc<=maxc){//spiral
+    for(int j=minc;j<=maxc;j++){//right
         cout<<arr[minr][j]<<" ";
     }
     minr++;
-    for(i=minr;i<=maxr;i++){//down
+    if(minr>maxr || minc>maxc) break;
+    for(int i=minr;i<=maxr;i++){//down
         cout<<arr[i][maxc]<<" ";
     }
     maxc--;
-
-    for(j=maxc;j>=minc;j--){//left
+    if(minr>maxr || minc>maxc) break;
+    for(int j=maxc;j>=minc;j--){//left
         cout<<arr[maxr][j]<<" ";
     }
     maxr--;
-
-    for(i=maxr;i>=minr;i++){//up
+    if(minr>maxr || minc>maxc) break;
+    for(int i=maxr;i>=minr;i--){//up
         cout<<arr[i][minc]<<" ";
     }
     minc++;
