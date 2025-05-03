@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-void swap(int &a,int &b){
-    int temp =a;
+void swap(int &a,int &b){// here '&' is not umpercent it is the symbol of alias
+    int temp =a;//        
      a=b ;
      b= temp;
     return;

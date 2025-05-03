@@ -5,7 +5,7 @@ int main (){
     int x =7;
     int* ptr = &x;
     cout<<ptr<<endl;
-    ptr = ptr + 1 ;
-    cout<<ptr;
-
+    cout<<x<<endl;
+    ptr++;
+    cout<<*ptr<<endl;
 }
