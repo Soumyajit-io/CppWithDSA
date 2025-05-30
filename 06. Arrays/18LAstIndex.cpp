@@ -1,3 +1,4 @@
+//find the last occurrence of X 
 #include<iostream>
 #include<vector>
 using namespace std;

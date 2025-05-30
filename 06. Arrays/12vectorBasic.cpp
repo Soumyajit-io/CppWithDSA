@@ -14,6 +14,7 @@ int main(){
     
     cout<<v.capacity()<<endl;
     v.push_back(0);
+    v.push_back(0);
     cout<<v.size()<<endl;
     cout<<v.capacity()<<endl;
     cout<<v[0]<<" ";
