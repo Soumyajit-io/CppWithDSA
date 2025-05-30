@@ -15,6 +15,7 @@ int main (){
     }
     cout<<"Enter the Element you want to find whose sum is equal to the element ";
     cin>>x;
+    //method 1   
     for(int i =0;i<=5;i++){
         for(int j =i+1;j<=5;j++){
             if(v[i]+v[j]==x) cout<<"The doublet indexs are :"<<i<<","<<j<<endl;

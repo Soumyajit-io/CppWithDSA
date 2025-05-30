@@ -33,6 +33,7 @@ int main (){
     display(v);
     cout<<endl<<"Enter Target :"<<endl;
     cin>>x;
+    if(x>n) x= x%n;
     reversepart(0,n-1-x,v);
     reversepart(n-x,n-1,v);
     reversepart(0,n-1,v);

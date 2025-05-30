@@ -1,4 +1,4 @@
-//Write a program to copy the contents of one array into another in the reverse order without extra array
+//Write a program to reverse array without extra arrqay
 
 #include<iostream>
 #include<vector>
