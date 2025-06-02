@@ -19,9 +19,7 @@ int main(){
         }
         swap(arr[i],arr[mindx]);
     }
-
-
-
+   
     for(int ele : arr){//for each element
         cout<<ele<<" ";
     }
