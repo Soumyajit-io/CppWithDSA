@@ -5,7 +5,8 @@
 #include <vector>
 using namespace std;
 int main (){
-    string s = "leetcode";
+    string s ;
+    cin>>s;
     vector<int> arr(26,0);
     for(int i=0;i<s.length();i++){//travelling in the string
         char ch = s[i];//converting to charecter

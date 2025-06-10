@@ -1,4 +1,4 @@
-//given n string consisting of digit from 0 to 9 . Return the index of string which has maximum value 
+  //given n string consisting of digit from 0 to 9 . Return the index of string which has maximum value 
 #include<iostream>
 #include<string>
 #include<algorithm>
