@@ -26,7 +26,7 @@ int first(vector<int>& nums, int target) {
         return x;
     }
 
-    int second(vector<int>& nums, int target) {
+int second(vector<int>& nums, int target) {
         int lo = 0, hi = nums.size() - 1;
         int y = -1;
         while (lo <= hi) {
@@ -50,7 +50,7 @@ int first(vector<int>& nums, int target) {
             }
         }
         return y;
-    }
+}
 int main(){
     int x = first(nums, target);
     int y = second(nums, target);

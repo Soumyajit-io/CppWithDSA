@@ -1,4 +1,5 @@
 //Write a program to change the sq matrix into transpose 
+//leedcode 867
 #include<iostream>
 using namespace std;
 int main(){

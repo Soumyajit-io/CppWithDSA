@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    int m1,n1,m2,n2;
+    int m1,n1,m2,n2,sum;
     cout<<"Enter row number for first matrix ";
     cin>>m1;
     cout<<"Enter column number for first matrix ";
@@ -40,10 +40,11 @@ int main(){
         //resultant[i][j]=summation(r=0-->r=(n1/m2)-1)a[i][r]*b[r][j]
         for(int i=0;i<=m1-1;i++){
             for(int j=0;j<=n2-1;j++){
-                res[i][j]=0;
-                for(int r=0;r<n2;r++){
-                    res[i][j]+=arr1[i][r]*arr2[r][j];
-                }
+               sum =0;
+               for(int k=0;k<n1;k++){//loop will run till columnof first matrix or row of second matrix
+                sum+=arr1[i][k]*arr2[k][j];
+               }
+               res[i][j]=sum;
             }
         }
     }
