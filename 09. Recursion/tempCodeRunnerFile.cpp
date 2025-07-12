@@ -1,0 +1,1 @@
+//number of ways you can go with stairs , 1 and 2 steps allowed.

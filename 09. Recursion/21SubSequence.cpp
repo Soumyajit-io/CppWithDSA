@@ -1,0 +1,1 @@
+//print all increasing sub sequence of length K from first n natural numbers

@@ -8,4 +8,4 @@ int stair(int n){
 }
 int main (){
     cout<<stair(4);
-}
+}20
