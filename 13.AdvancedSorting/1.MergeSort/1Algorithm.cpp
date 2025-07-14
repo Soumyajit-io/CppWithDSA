@@ -53,6 +53,8 @@ void mergesort(vector<int>& a){
     mergesort(v1);
     mergesort(v2);
     merge(v1,v2,a);
+    v1.clear();
+    v2.clear();
     
 }
 int main(){

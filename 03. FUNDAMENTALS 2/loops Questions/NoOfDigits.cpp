@@ -8,7 +8,7 @@ int main(){
         n=n/10;
         x++;
 
-
+    
     }
     if(x==0) cout<<1;
     else cout<<(x);
