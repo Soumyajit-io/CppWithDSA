@@ -12,6 +12,7 @@ class book{
     void setPrice(int price){
         this->price=price;
     }
+
     int getPrice(){
         return price;
     }
@@ -27,14 +28,15 @@ class book{
         return b;
 }
 int main(){
-   book bk,ck;
-   bk.setName("boo1");
-   bk.setPrice(450);
+   book bk;//memory allocate in compile time , static allocation
+   book* cs = new book;//memory allocate in run time , dynamic allocation
+    // using pointer
 
-   ck.setName("boo2");
-   ck.setPrice(456); 
+    //(*cs).setName("compu");
+    //or
+    cs->setName("compu");
+  
+    
+    cout<<(*cs).getName();
 
-   book maxBook = getMaxPrice(bk, ck);
-   cout << "Book with higher price: " << maxBook.getName() << " - Price: " << maxBook.getPrice() << endl;
-   
 }  

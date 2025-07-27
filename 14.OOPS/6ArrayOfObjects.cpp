@@ -27,14 +27,7 @@ class book{
         return b;
 }
 int main(){
-   book bk,ck;
-   bk.setName("boo1");
-   bk.setPrice(450);
-
-   ck.setName("boo2");
-   ck.setPrice(456); 
-
-   book maxBook = getMaxPrice(bk, ck);
-   cout << "Book with higher price: " << maxBook.getName() << " - Price: " << maxBook.getPrice() << endl;
-   
-}  
+   book academic[3];
+   academic[0].setName("ComputerScience");
+   cout<<academic[0].getName();
+} 
