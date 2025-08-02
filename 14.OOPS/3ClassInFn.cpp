@@ -20,8 +20,8 @@ class book{
         return name;
     }
 };
- book getMaxPrice(book a,book b){
-    if (a.getPrice() > b.getPrice())
+ book getMaxPrice(book a,book b){//pass by value
+    if (a.getPrice() > b.getPrice())// use & if u want pass by referance
         return a;
     else
         return b;

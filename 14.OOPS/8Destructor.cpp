@@ -11,7 +11,7 @@ public:
         this->engineSize = engineSize;
         cout<<"Constructor call hua "<<endl;
     }
-    ~Bike(){//this is a destructor... call when a abject is out of scope
+    ~Bike(){//this is a destructor... call when a object is out of scope
         cout<<"Destructor call hua";
     }
 };
