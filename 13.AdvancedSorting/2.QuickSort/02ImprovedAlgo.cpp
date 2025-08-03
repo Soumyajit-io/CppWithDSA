@@ -12,7 +12,7 @@ int partition(int arr[],int si,int ei){
         }
     }
     int pivotIDx = count + si;
-    swap(arr[si],arr[pivotIDx]);
+    swap(arr[(si+ei)/2],arr[pivotIDx]);
     int i=si;
     int j = ei;
     while(i<pivotIDx && j>pivotIDx){
