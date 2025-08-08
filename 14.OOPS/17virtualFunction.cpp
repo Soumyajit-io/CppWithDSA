@@ -11,15 +11,15 @@ class vehicle{
 class bike{
     public:
     int handlesize;
-    void show(){// function overriding 
-        cout<<"bike ka show";
+    virtual void show(){
+        cout<<"bike ka show"<<endl;
     }
 };
 
-class scooty : public vehicle , public bike{//multiple
+class scooty : public vehicle , public bike{
     public:
     int bucket;
-    void show(){//same function diff work
+    void show(){
         cout<<"scoty ka show"<<endl; 
     }
 };
@@ -34,9 +34,7 @@ int main (){
     kt.show();//
     kt.bike::show();
 
-    bike* kn;// a parent pointer can hold the address of child container
+    bike* kn;
     kn = &kt;
-    kn->show();// here is a problem kn has type bike but it store the address for kt which has type scooty 
-    //now what we can call with kn ???
-    // for we use virtual function
+    kn->show();
 }
