@@ -4,9 +4,7 @@
 #include<vector>
 using namespace std;
 #include <algorithm>
-void display(vector<int>& v){//this is a new vector has a different memory location.
-    //                        so we will add ''&'' to make it a reference variable.
-    
+void display(vector<int>& v){
     for(int i = 0;i<v.size();i++){
         cout<<v[i]<<" ";
     }

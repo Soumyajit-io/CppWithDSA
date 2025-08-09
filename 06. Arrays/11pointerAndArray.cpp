@@ -9,7 +9,7 @@ int main (){
     cout<<p<<endl;
 
    
-    cout<<p[0]; // p[0] is the same as arr[0]
+    cout<<p[0]<<; // p[0] is the same as arr[0]
     
     
     for(int i =0 ; i<=4;i++){

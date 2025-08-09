@@ -1,3 +1,4 @@
+//return how many numbers are greater then a num x
 #include<iostream>
 using namespace std;
 
