@@ -24,17 +24,24 @@ void display(stack<int>& st){
     st.push(x);
 }
 
+void reverse(stack<int>& st){
+    if(st.size()==1) return;
+    int x = st.top();
+    st.pop();
+    reverse(st);
+    pushAtButtom(st,x);
+}
+
 int main() {
     stack<int> st; 
-    stack<int> temp;// two extra stack
-    stack<int> temp2;
+    
 
     st.push(10);
     st.push(20);
     st.push(30);
     display(st);
+    reverse(st);
     
-    pushAtButtom(st,80);
     display(st);
     
 }
